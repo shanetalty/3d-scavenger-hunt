@@ -31,37 +31,33 @@
     // Create the key model
     loader.load('assets/key.glb', function (gltf) {
       var keyModel = gltf.scene;
+      keyModel.scale.set(0.1, 0.1, 0.1); // Adjust the scale as needed
       keyModel.position.set(-2, 0, -5);
       scene.add(keyModel);
-    }, undefined, function (error) {
-      console.error('Failed to load the key model:', error);
     });
 
     // Create the book model
     loader.load('assets/book.glb', function (gltf) {
       var bookModel = gltf.scene;
+      bookModel.scale.set(0.1, 0.1, 0.1); // Adjust the scale as needed
       bookModel.position.set(-1, 0, -5);
       scene.add(bookModel);
-    }, undefined, function (error) {
-      console.error('Failed to load the book model:', error);
     });
 
     // Create the doll model
     loader.load('assets/doll.glb', function (gltf) {
       var dollModel = gltf.scene;
+      dollModel.scale.set(0.1, 0.1, 0.1); // Adjust the scale as needed
       dollModel.position.set(1, 0, -5);
       scene.add(dollModel);
-    }, undefined, function (error) {
-      console.error('Failed to load the doll model:', error);
     });
 
     // Create the spider model
     loader.load('assets/spider.glb', function (gltf) {
       var spiderModel = gltf.scene;
+      spiderModel.scale.set(0.1, 0.1, 0.1); // Adjust the scale as needed
       spiderModel.position.set(2, 0, -5);
       scene.add(spiderModel);
-    }, undefined, function (error) {
-      console.error('Failed to load the spider model:', error);
     });
 
     // Render the scene
